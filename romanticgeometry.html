@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Geometry: The Triangle of Consummate Love</title>
+    <link rel="stylesheet" href="files/styles.css">
+</head>
+
+<body>
+
+    <div class="content-wrapper">
+        <img src="files/banner.svg" alt="Banner Image" style="width: 100%; height: 100%; object-fit: cover;">
+        <p>
+        <h2>Are you experiencing consummate love?</h2>
+        <strong>Consummate love is romantic love that lasts a lifetime.</strong>
+        Psychologist Robert Sternberg introduced the idea that this consummate love is built on <strong>three key
+            components</strong>:
+        </p>
+
+        <img src="files/consummate-love-triangle.svg" alt="Everybody loves a good love triangle..."
+            class="centered-image">
+
+        <p>
+            This survey builds on Sternberg's framework, adapting it for modern relationships by adding practical
+            aspects and focusing on self-awareness and personal responsibility.
+            Designed for individuals aged 20 and above who have been in a relationship for at least three months, this
+            survey invites you to explore how much "consummate love" you’re experiencing in your relationship today!
+        </p>
+
+        <p>
+            <strong>Instructions</strong><br>
+            After answering some information about yourself, you will be presented with tables including statements
+            related to each component of consummate love (intimacy, passion, and commitment).
+            Indicate how much you agree with each statement by using the scale from 0 to 6, where 0 is the most
+            disagreement and 6 is the highest agreement.
+            At the end of the questionnaire, you will get a percentage score for each component of consummate love as
+            well as a total percentage of your overall consummate love.
+        </p>
+
+        <form id="survey-form">
+            <!-- Background Characteristics -->
+            <div class="section">
+                <h2>Tell Us About Yourself...</h2>
+                <div class="question">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="question">
+                    <label for="age">What is your age category?</label><br>
+                    <input type="radio" name="age" value="20-29"> 20-29<br>
+                    <input type="radio" name="age" value="30-39"> 30-39<br>
+                    <input type="radio" name="age" value="40-49"> 40-49<br>
+                    <input type="radio" name="age" value="50-64"> 50-64<br>
+                    <input type="radio" name="age" value="65+"> 65+
+                </div>
+                <div class="question">
+                    <label>What is your biological sex?</label><br>
+                    <input type="radio" name="sex" value="Male"> Male<br>
+                    <input type="radio" name="sex" value="Female"> Female
+                </div>
+                <div class="question">
+                    <label>How long have you been in your current relationship?</label><br>
+                    <input type="radio" name="relationship-length" value="<1 year"> less than 1 year<br>
+                    <input type="radio" name="relationship-length" value="1-3 years"> 1-3 years<br>
+                    <input type="radio" name="relationship-length" value="3-5 years"> 3-5 years<br>
+                    <input type="radio" name="relationship-length" value="5-10 years"> 5-10 years<br>
+                    <input type="radio" name="relationship-length" value="10+ years"> 10+ years
+                </div>
+                <div class="question">
+                    <label>How long have you been in your current relationship?</label><br>
+                    <input type="radio" name="sexual-orientation" value="heterosexual"> Heterosexual<br>
+                    <input type="radio" name="sexual-orientation" value="homosexual"> Homosexual<br>
+                    <input type="radio" name="sexual-orientation" value="bisexual"> Bisexual<br>
+                    <input type="radio" name="sexual-orientation" value="other"> Other<br>
+                </div>
+
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="question-col">
+                                <h2>Intimacy</h2>
+                            </th>
+                            <th>0<br><span>Strongly<br>Disagree</span></th>
+                            <th>1<br><span>Disagree</span></th>
+                            <th>2<br><span>Slightly<br>Disagree</span></th>
+                            <th>3<br><span>Neutral</span></th>
+                            <th>4<br><span>Slightly<br>Agree</span></th>
+                            <th>5<br><span>Agree</span></th>
+                            <th>6<br><span>Strongly<br>Agree</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="question-col">I feel comfortable sharing my innermost thoughts and feelings with
+                                my partner.</td>
+                            <td><input type="radio" name="intimacy-q1" value="0"></td>
+                            <td><input type="radio" name="intimacy-q1" value="1"></td>
+                            <td><input type="radio" name="intimacy-q1" value="2"></td>
+                            <td><input type="radio" name="intimacy-q1" value="3"></td>
+                            <td><input type="radio" name="intimacy-q1" value="4"></td>
+                            <td><input type="radio" name="intimacy-q1" value="5"></td>
+                            <td><input type="radio" name="intimacy-q1" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">My partner makes an effort to understand what I need emotionally
+                                (such as comfort or support) and meets those needs.</td>
+                            <td><input type="radio" name="intimacy-q2" value="0"></td>
+                            <td><input type="radio" name="intimacy-q2" value="1"></td>
+                            <td><input type="radio" name="intimacy-q2" value="2"></td>
+                            <td><input type="radio" name="intimacy-q2" value="3"></td>
+                            <td><input type="radio" name="intimacy-q2" value="4"></td>
+                            <td><input type="radio" name="intimacy-q2" value="5"></td>
+                            <td><input type="radio" name="intimacy-q2" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">I feel I can clearly communicate both positive and negative
+                                feelings with my partner.</td>
+                            <td><input type="radio" name="intimacy-q3" value="0"></td>
+                            <td><input type="radio" name="intimacy-q3" value="1"></td>
+                            <td><input type="radio" name="intimacy-q3" value="2"></td>
+                            <td><input type="radio" name="intimacy-q3" value="3"></td>
+                            <td><input type="radio" name="intimacy-q3" value="4"></td>
+                            <td><input type="radio" name="intimacy-q3" value="5"></td>
+                            <td><input type="radio" name="intimacy-q3" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">My partner listens to me without judgement.</td>
+                            <td><input type="radio" name="intimacy-q4" value="0"></td>
+                            <td><input type="radio" name="intimacy-q4" value="1"></td>
+                            <td><input type="radio" name="intimacy-q4" value="2"></td>
+                            <td><input type="radio" name="intimacy-q4" value="3"></td>
+                            <td><input type="radio" name="intimacy-q4" value="4"></td>
+                            <td><input type="radio" name="intimacy-q4" value="5"></td>
+                            <td><input type="radio" name="intimacy-q4" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">I feel safe when I am with my partner, meaning that I can feel at
+                                ease without fear of harm or distress.</td>
+                            <td><input type="radio" name="intimacy-q5" value="0"></td>
+                            <td><input type="radio" name="intimacy-q5" value="1"></td>
+                            <td><input type="radio" name="intimacy-q5" value="2"></td>
+                            <td><input type="radio" name="intimacy-q5" value="3"></td>
+                            <td><input type="radio" name="intimacy-q5" value="4"></td>
+                            <td><input type="radio" name="intimacy-q5" value="5"></td>
+                            <td><input type="radio" name="intimacy-q5" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">My partner respects my privacy and boundaries.</td>
+                            <td><input type="radio" name="intimacy-q6" value="0"></td>
+                            <td><input type="radio" name="intimacy-q6" value="1"></td>
+                            <td><input type="radio" name="intimacy-q6" value="2"></td>
+                            <td><input type="radio" name="intimacy-q6" value="3"></td>
+                            <td><input type="radio" name="intimacy-q6" value="4"></td>
+                            <td><input type="radio" name="intimacy-q6" value="5"></td>
+                            <td><input type="radio" name="intimacy-q6" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">I trust my partner, meaning that I believe my partner acts in a way
+                                that is reliable and honest.</td>
+                            <td><input type="radio" name="intimacy-q7" value="0"></td>
+                            <td><input type="radio" name="intimacy-q7" value="1"></td>
+                            <td><input type="radio" name="intimacy-q7" value="2"></td>
+                            <td><input type="radio" name="intimacy-q7" value="3"></td>
+                            <td><input type="radio" name="intimacy-q7" value="4"></td>
+                            <td><input type="radio" name="intimacy-q7" value="5"></td>
+                            <td><input type="radio" name="intimacy-q7" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">I feel comfortable reaching out to my partner for comfort when I am
+                                upset or anxious.</td>
+                            <td><input type="radio" name="intimacy-q8" value="0"></td>
+                            <td><input type="radio" name="intimacy-q8" value="1"></td>
+                            <td><input type="radio" name="intimacy-q8" value="2"></td>
+                            <td><input type="radio" name="intimacy-q8" value="3"></td>
+                            <td><input type="radio" name="intimacy-q8" value="4"></td>
+                            <td><input type="radio" name="intimacy-q8" value="5"></td>
+                            <td><input type="radio" name="intimacy-q8" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">I feel secure in my relationship, even when my partner is
+                                unavailable or distant.</td>
+                            <td><input type="radio" name="intimacy-q9" value="0"></td>
+                            <td><input type="radio" name="intimacy-q9" value="1"></td>
+                            <td><input type="radio" name="intimacy-q9" value="2"></td>
+                            <td><input type="radio" name="intimacy-q9" value="3"></td>
+                            <td><input type="radio" name="intimacy-q9" value="4"></td>
+                            <td><input type="radio" name="intimacy-q9" value="5"></td>
+                            <td><input type="radio" name="intimacy-q9" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">I feel comfortable reaching out to my partner for help if I have
+                                emotional struggles.</td>
+                            <td><input type="radio" name="intimacy-q10" value="0"></td>
+                            <td><input type="radio" name="intimacy-q10" value="1"></td>
+                            <td><input type="radio" name="intimacy-q10" value="2"></td>
+                            <td><input type="radio" name="intimacy-q10" value="3"></td>
+                            <td><input type="radio" name="intimacy-q10" value="4"></td>
+                            <td><input type="radio" name="intimacy-q10" value="5"></td>
+                            <td><input type="radio" name="intimacy-q10" value="6"></td>
+                        </tr>
+                        <!-- Add more rows for additional questions -->
+                    </tbody>
+                </table>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="question-col">
+                                <h2>Commitment</h2>
+                            </th>
+                            <th>0<br><span>Strongly<br>Disagree</span></th>
+                            <th>1<br><span>Disagree</span></th>
+                            <th>2<br><span>Slightly<br>Disagree</span></th>
+                            <th>3<br><span>Neutral</span></th>
+                            <th>4<br><span>Slightly<br>Agree</span></th>
+                            <th>5<br><span>Agree</span></th>
+                            <th>6<br><span>Strongly<br>Agree</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="question-col">I felt ready for a relationship before I got into my current
+                                relationship.</td>
+                            <td><input type="radio" name="commitment-q1" value="0"></td>
+                            <td><input type="radio" name="commitment-q1" value="1"></td>
+                            <td><input type="radio" name="commitment-q1" value="2"></td>
+                            <td><input type="radio" name="commitment-q1" value="3"></td>
+                            <td><input type="radio" name="commitment-q1" value="4"></td>
+                            <td><input type="radio" name="commitment-q1" value="5"></td>
+                            <td><input type="radio" name="commitment-q1" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">I show curiosity about my partner’s ideas and interests.</td>
+                            <td><input type="radio" name="commitment-q2" value="0"></td>
+                            <td><input type="radio" name="commitment-q2" value="1"></td>
+                            <td><input type="radio" name="commitment-q2" value="2"></td>
+                            <td><input type="radio" name="commitment-q2" value="3"></td>
+                            <td><input type="radio" name="commitment-q2" value="4"></td>
+                            <td><input type="radio" name="commitment-q2" value="5"></td>
+                            <td><input type="radio" name="commitment-q2" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">If I were to leave my partner, I’d feel like I’d lose many of my
+                                happy memories that make me who I am.</td>
+                            <td><input type="radio" name="commitment-q3" value="0"></td>
+                            <td><input type="radio" name="commitment-q3" value="1"></td>
+                            <td><input type="radio" name="commitment-q3" value="2"></td>
+                            <td><input type="radio" name="commitment-q3" value="3"></td>
+                            <td><input type="radio" name="commitment-q3" value="4"></td>
+                            <td><input type="radio" name="commitment-q3" value="5"></td>
+                            <td><input type="radio" name="commitment-q3" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">If I were to leave my partner, I’d lose most of my money and/or
+                                possessions.</td>
+                            <td><input type="radio" name="commitment-q4" value="0"></td>
+                            <td><input type="radio" name="commitment-q4" value="1"></td>
+                            <td><input type="radio" name="commitment-q4" value="2"></td>
+                            <td><input type="radio" name="commitment-q4" value="3"></td>
+                            <td><input type="radio" name="commitment-q4" value="4"></td>
+                            <td><input type="radio" name="commitment-q4" value="5"></td>
+                            <td><input type="radio" name="commitment-q4" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">I invest financially in my relationship.</td>
+                            <td><input type="radio" name="commitment-q5" value="0"></td>
+                            <td><input type="radio" name="commitment-q5" value="1"></td>
+                            <td><input type="radio" name="commitment-q5" value="2"></td>
+                            <td><input type="radio" name="commitment-q5" value="3"></td>
+                            <td><input type="radio" name="commitment-q5" value="4"></td>
+                            <td><input type="radio" name="commitment-q5" value="5"></td>
+                            <td><input type="radio" name="commitment-q5" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">There is no better alternative than my relationship to satisfy my
+                                needs.</td>
+                            <td><input type="radio" name="commitment-q6" value="0"></td>
+                            <td><input type="radio" name="commitment-q6" value="1"></td>
+                            <td><input type="radio" name="commitment-q6" value="2"></td>
+                            <td><input type="radio" name="commitment-q6" value="3"></td>
+                            <td><input type="radio" name="commitment-q6" value="4"></td>
+                            <td><input type="radio" name="commitment-q6" value="5"></td>
+                            <td><input type="radio" name="commitment-q6" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">I am willing to be flexible to maintain my relationship when
+                                circumstances change.</td>
+                            <td><input type="radio" name="commitment-q7" value="0"></td>
+                            <td><input type="radio" name="commitment-q7" value="1"></td>
+                            <td><input type="radio" name="commitment-q7" value="2"></td>
+                            <td><input type="radio" name="commitment-q7" value="3"></td>
+                            <td><input type="radio" name="commitment-q7" value="4"></td>
+                            <td><input type="radio" name="commitment-q7" value="5"></td>
+                            <td><input type="radio" name="commitment-q7" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">Experiences and lessons from past family/romantic relationships
+                                have prepared me to better commit to my current partner.</td>
+                            <td><input type="radio" name="commitment-q8" value="0"></td>
+                            <td><input type="radio" name="commitment-q8" value="1"></td>
+                            <td><input type="radio" name="commitment-q8" value="2"></td>
+                            <td><input type="radio" name="commitment-q8" value="3"></td>
+                            <td><input type="radio" name="commitment-q8" value="4"></td>
+                            <td><input type="radio" name="commitment-q8" value="5"></td>
+                            <td><input type="radio" name="commitment-q8" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">I am convinced I have chosen the right partner with whom I want to
+                                spend the rest of my life.</td>
+                            <td><input type="radio" name="commitment-q9" value="0"></td>
+                            <td><input type="radio" name="commitment-q9" value="1"></td>
+                            <td><input type="radio" name="commitment-q9" value="2"></td>
+                            <td><input type="radio" name="commitment-q9" value="3"></td>
+                            <td><input type="radio" name="commitment-q9" value="4"></td>
+                            <td><input type="radio" name="commitment-q9" value="5"></td>
+                            <td><input type="radio" name="commitment-q9" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">I hold myself accountable for keeping the promises I made to my
+                                partner.</td>
+                            <td><input type="radio" name="commitment-q10" value="0"></td>
+                            <td><input type="radio" name="commitment-q10" value="1"></td>
+                            <td><input type="radio" name="commitment-q10" value="2"></td>
+                            <td><input type="radio" name="commitment-q10" value="3"></td>
+                            <td><input type="radio" name="commitment-q10" value="4"></td>
+                            <td><input type="radio" name="commitment-q10" value="5"></td>
+                            <td><input type="radio" name="commitment-q10" value="6"></td>
+                        </tr>
+                        <!-- Add more rows for additional questions -->
+                    </tbody>
+                </table>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="question-col">
+                                <h2>Passion</h2>
+                            </th>
+                            <th>0<br><span>Strongly<br>Disagree</span></th>
+                            <th>1<br><span>Disagree</span></th>
+                            <th>2<br><span>Slightly<br>Disagree</span></th>
+                            <th>3<br><span>Neutral</span></th>
+                            <th>4<br><span>Slightly<br>Agree</span></th>
+                            <th>5<br><span>Agree</span></th>
+                            <th>6<br><span>Strongly<br>Agree</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="question-col">Physical affection (such as hugs, kisses, etc.) makes me feel more
+                                connected to my partner.</td>
+                            <td><input type="radio" name="passion-q1" value="0"></td>
+                            <td><input type="radio" name="passion-q1" value="1"></td>
+                            <td><input type="radio" name="passion-q1" value="2"></td>
+                            <td><input type="radio" name="passion-q1" value="3"></td>
+                            <td><input type="radio" name="passion-q1" value="4"></td>
+                            <td><input type="radio" name="passion-q1" value="5"></td>
+                            <td><input type="radio" name="passion-q1" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">I feel an emotional bond with my partner through small gestures,
+                                such as holding hands or sitting close.</td>
+                            <td><input type="radio" name="passion-q2" value="0"></td>
+                            <td><input type="radio" name="passion-q2" value="1"></td>
+                            <td><input type="radio" name="passion-q2" value="2"></td>
+                            <td><input type="radio" name="passion-q2" value="3"></td>
+                            <td><input type="radio" name="passion-q2" value="4"></td>
+                            <td><input type="radio" name="passion-q2" value="5"></td>
+                            <td><input type="radio" name="passion-q2" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">Receiving compliments and encouraging words from my partner ignites
+                                romantic feelings.</td>
+                            <td><input type="radio" name="passion-q3" value="0"></td>
+                            <td><input type="radio" name="passion-q3" value="1"></td>
+                            <td><input type="radio" name="passion-q3" value="2"></td>
+                            <td><input type="radio" name="passion-q3" value="3"></td>
+                            <td><input type="radio" name="passion-q3" value="4"></td>
+                            <td><input type="radio" name="passion-q3" value="5"></td>
+                            <td><input type="radio" name="passion-q3" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">Spending uninterrupted time together makes me feel more connected
+                                to my partner.</td>
+                            <td><input type="radio" name="passion-q4" value="0"></td>
+                            <td><input type="radio" name="passion-q4" value="1"></td>
+                            <td><input type="radio" name="passion-q4" value="2"></td>
+                            <td><input type="radio" name="passion-q4" value="3"></td>
+                            <td><input type="radio" name="passion-q4" value="4"></td>
+                            <td><input type="radio" name="passion-q4" value="5"></td>
+                            <td><input type="radio" name="passion-q4" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">Sharing activities we both enjoy makes me feel closer to my
+                                partner.</td>
+                            <td><input type="radio" name="passion-q5" value="0"></td>
+                            <td><input type="radio" name="passion-q5" value="1"></td>
+                            <td><input type="radio" name="passion-q5" value="2"></td>
+                            <td><input type="radio" name="passion-q5" value="3"></td>
+                            <td><input type="radio" name="passion-q5" value="4"></td>
+                            <td><input type="radio" name="passion-q5" value="5"></td>
+                            <td><input type="radio" name="passion-q5" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">I feel a sense of anticipation or excitement when I plan to meet or
+                                spend time with my partner.</td>
+                            <td><input type="radio" name="passion-q6" value="0"></td>
+                            <td><input type="radio" name="passion-q6" value="1"></td>
+                            <td><input type="radio" name="passion-q6" value="2"></td>
+                            <td><input type="radio" name="passion-q6" value="3"></td>
+                            <td><input type="radio" name="passion-q6" value="4"></td>
+                            <td><input type="radio" name="passion-q6" value="5"></td>
+                            <td><input type="radio" name="passion-q6" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">When my partner helps me with daily tasks, I feel more drawn to
+                                them romantically.</td>
+                            <td><input type="radio" name="passion-q7" value="0"></td>
+                            <td><input type="radio" name="passion-q7" value="1"></td>
+                            <td><input type="radio" name="passion-q7" value="2"></td>
+                            <td><input type="radio" name="passion-q7" value="3"></td>
+                            <td><input type="radio" name="passion-q7" value="4"></td>
+                            <td><input type="radio" name="passion-q7" value="5"></td>
+                            <td><input type="radio" name="passion-q7" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">When my partner does something unexpectedly thoughtful, it
+                                strengthens my romantic feelings towards my partner.</td>
+                            <td><input type="radio" name="passion-q8" value="0"></td>
+                            <td><input type="radio" name="passion-q8" value="1"></td>
+                            <td><input type="radio" name="passion-q8" value="2"></td>
+                            <td><input type="radio" name="passion-q8" value="3"></td>
+                            <td><input type="radio" name="passion-q8" value="4"></td>
+                            <td><input type="radio" name="passion-q8" value="5"></td>
+                            <td><input type="radio" name="passion-q8" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">Receiving meaningful gifts from my partner deepens my feelings of
+                                connection to my partner.</td>
+                            <td><input type="radio" name="passion-q9" value="0"></td>
+                            <td><input type="radio" name="passion-q9" value="1"></td>
+                            <td><input type="radio" name="passion-q9" value="2"></td>
+                            <td><input type="radio" name="passion-q9" value="3"></td>
+                            <td><input type="radio" name="passion-q9" value="4"></td>
+                            <td><input type="radio" name="passion-q9" value="5"></td>
+                            <td><input type="radio" name="passion-q9" value="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="question-col">The romantic feelings in our relationship are just as strong now as
+                                they were in the beginning.</td>
+                            <td><input type="radio" name="passion-q10" value="0"></td>
+                            <td><input type="radio" name="passion-q10" value="1"></td>
+                            <td><input type="radio" name="passion-q10" value="2"></td>
+                            <td><input type="radio" name="passion-q10" value="3"></td>
+                            <td><input type="radio" name="passion-q10" value="4"></td>
+                            <td><input type="radio" name="passion-q10" value="5"></td>
+                            <td><input type="radio" name="passion-q10" value="6"></td>
+                        </tr>
+                        <!-- Add more rows for additional questions -->
+                    </tbody>
+                </table>
+
+
+                <!-- Open-Ended Question -->
+                <div class="section">
+                    <h2>What does consummate love mean to you?</h2>
+                    <div class="question">
+                        <textarea id="open-ended" name="open-ended" rows="4" cols="50"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit">Submit</button>
+        </form>
+        <div id="results-container" style="margin-top: 20px;"></div>
+    </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2024 Romantic Geometry | Survey Designed by Amy, Arlin, and Vanessa.</p>
+    </div>
+
+    <script src="files/scripts.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-family: Trebuchet MS, sans-serif;
+    background-image: url('background.jpg');
+    /* Replace with your image file */
+    background-repeat: repeat;
+    /* Tiling the background */
+    background-size: auto;
+    /* Ensure original size of tiles */
+}
+
+
+.content-wrapper {
+    flex: 1;
+    /* Pushes the footer to the bottom */
+    max-width: 80%;
+    /* Adjust the width of the content strip */
+    margin: 20px auto;
+    /* Center the strip horizontally and add vertical spacing */
+    background-color: white;
+    /* White background for the content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Subtle drop shadow */
+    padding: 20px;
+    /* Space inside the content strip */
+    border-radius: 8px;
+    /* Optional: rounded corners */
+}
+
+/* Footer stays at the bottom when the content is short */
+.footer {
+    text-align: center;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: #D11324;
+}
+
+.centered-image {
+    display: block;
+    /* Ensures proper centering */
+    margin: 0 auto;
+    /* Horizontally centers the image */
+    max-width: 100%;
+    /* Ensures it doesn't exceed the container width */
+    max-height: 400px;
+    /* Scales down to a maximum height (adjust as needed) */
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.scale-labels {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    font-size: 0.9em;
+    margin-top: -5px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+    vertical-align: top;
+    /* Align numbers to the top */
+}
+
+td {
+    border: 1px solid #ddd;
+}
+
+.question-col {
+    width: 40%;
+    /* Consistent width for question column */
+    text-align: left;
+}
+
+.table-wrapper {
+    table-layout: fixed;
+    /* Ensures consistent column widths */
+    width: 100%;
+    /* Tables span full width */
+}
+
+.question {
+    text-align: left;
+}
+
+button {
+    background-color: #D11324;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #B10E1E;
+}
