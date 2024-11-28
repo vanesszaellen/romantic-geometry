@@ -1,7 +1,4 @@
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -16,8 +13,6 @@ body {
 
 
 .content-wrapper {
-    flex: 1;
-    /* Pushes the footer to the bottom */
     max-width: 80%;
     /* Adjust the width of the content strip */
     margin: 20px auto;
@@ -36,7 +31,6 @@ body {
 .footer {
     text-align: center;
     padding: 10px;
-    flex-shrink: 0;
 }
 
 h1,
